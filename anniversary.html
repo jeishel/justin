@@ -7,43 +7,104 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: none; /* Hide body initially */
-            text-align: center;background-color: rgb(252, 185, 140);
-            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F0E68C;
+            text-align: center;
+            display: none; /* Initially hide body */
+        }
 
+        header {
+            padding: 20px;
+            background-color: 	#964B00;
+            color: white;
         }
+
         .nav {
-            margin-top: 20px;
+            margin: 20px 0;
+            display: none; /* Hidden initially */
         }
+
         .nav a {
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
-            color: hwb(0 6% 13%);
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: 	#964B00;
         }
+
+        .nav a:hover {
+            background-color: 	#964B00;
+        }
+
         section {
-            margin-top: 40px;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-        p.double {border-style: double;
+
+        section h2 {
+            color: 	#964B00;
+        }
+
+        p.double {
+            border: 2px double 	#964B00;
+            padding: 15px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        audio {
+            margin: 10px 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            iframe {
+                height: auto;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Our Special Day!</h1>
+    <header>
+        <h1><b>HAPPY ANNIVERSARY BAE!</b></h1>
+    </header>
     
-    <div class="nav" style="display: none;">
+    <div class="nav">
         <a href="#our-love-story">Our Love Story</a>
-        <a href="#our-photos">Our Photos</a>
+        <a href="#our-photos">US</a>
         <a href="#message-for-you">Message for You</a>
     </div>
-<hr>
+
     <audio controls autoplay>
         <source src="CC.ogg" type="audio/ogg">
         <source src="CC.mp3" type="audio/mpeg">
-      </audio>
+        Your browser does not support the audio element.
+    </audio>
 
-    <section id="our-love-story" style="display: none;">
+    <section id="our-love-story">
         <h2>Our Love Story</h2>
-        <p class="double">"Take delight in the Lord, and He will give you the desires of your heart. Commit your way to the Lord; trust in Him and He will do this."
+        <p class="double">
+            "Take delight in the Lord, and He will give you the desires of your heart. Commit your way to the Lord; trust in Him and He will do this."
             When you focus on God, He aligns your desires with His perfect plan, including finding the right person to love.
             
             I used to think love wasn’t meant for me. After countless disappointments, I gave up on the idea of it entirely. But deep in my heart, in one quiet moment during 2023, I prayed to God, asking Him to show me what real love is. It wasn’t a desperate plea—it was a surrender, trusting that if love was meant to find me, it would be through His guidance.
@@ -56,27 +117,31 @@
             
             Now, here we are, celebrating our anniversary. We didn’t think we’d make it this far—so many people doubted us, said it was impossible. But through all the challenges, we stayed strong. Despite the distance, we never let it diminish the love we shared. It amazes me every day how we’ve built something so beautiful.  
             
-            I know now that God didn’t just answer my prayer—He exceeded it. He gave me someone who feels like my soulmate, someone who reminds me that love isn’t just about proximity; it’s about connection, communication, and understanding. I’m grateful beyond words for the love we’ve nurtured and the strength we’ve found in each other. It’s a love I never thought I’d have, but it’s the one I’ve always dreamed of.</p> 
+            I know now that God didn’t just answer my prayer—He exceeded it. He gave me someone who feels like my soulmate, someone who reminds me that love isn’t just about proximity; it’s about connection, communication, and understanding. I’m grateful beyond words for the love we’ve nurtured and the strength we’ve found in each other. It’s a love I never thought I’d have, but it’s the one I’ve always dreamed of.
+        </p>
     </section>
 
-    <section id="our-photos" style="display: none;">
-        <h2>Our Photos</h2>
-    
-<iframe src="anniv.html" height="488" width="1000" title="anniv"></iframe>
+    <section id="our-photos">
+        <h2>US</h2>
+        <iframe src="anniv.html" height="400"></iframe>
     </section>
 
-    <section id="message-for-you" style="display: none;">
+    <section id="message-for-you">
         <h2>Message for You</h2>
-        <p><a href="https://medium.com/@erinkat44/kanunay-karon-puhon-kanimo-ra-ko-mupahuway-6c2ae08a4088" target="_blank">Do you still remember this?</a></p>
-    <p>No matter where life takes us, no matter how the tides change, my heart will always find its way back to you.</p>
-    <iframe src="message.html" height="1000" width="1000" title="anniv"></iframe>
-</section>
+        <p>
+            <a href="https://medium.com/@erinkat44/kanunay-karon-puhon-kanimo-ra-ko-mupahuway-6c2ae08a4088" target="_blank">
+                Do you still remember this?
+            </a>
+        </p>
+        <p>No matter where life takes us, no matter how the tides change, my heart will always find its way back to you.</p>
+        <iframe src="message.html" height="400"></iframe>
+    </section>
 
     <script>
-        // Show the body when the page loads
+        // Show body when page loads
         window.onload = function() {
             document.body.style.display = 'block';
-            alert('Happy Anniversary!');
+            alert('Happy Anniversary Baeeee!');
             firstPopup();
         };
 
@@ -85,10 +150,10 @@
         function firstPopup() {
             clickCount++;
             if (clickCount === 1) {
-                alert('I love you!');
+                alert('I love you');
                 firstPopup();
             } else if (clickCount === 2) {
-                alert('Please be mine forever!');
+                alert('I will always love you tin');
                 showNavigation();
             }
         }
@@ -96,7 +161,7 @@
         function showNavigation() {
             document.querySelector('.nav').style.display = 'block';
             document.querySelectorAll('section').forEach(section => {
-                section.style.display = 'block'; // Show all sections
+                section.style.display = 'block';
             });
         }
     </script>
