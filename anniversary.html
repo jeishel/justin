@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: none; /* Hide body initially */
+            text-align: center;background-color: rgb(252, 185, 140);
+            font-family: 'Arial', sans-serif;
+
+        }
+        .nav {
+            margin-top: 20px;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: hwb(0 6% 13%);
+        }
+        section {
+            margin-top: 40px;
+        }
+        p.double {border-style: double;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Special Day!</h1>
+    
+    <div class="nav" style="display: none;">
+        <a href="#our-love-story">Our Love Story</a>
+        <a href="#our-photos">Our Photos</a>
+        <a href="#message-for-you">Message for You</a>
+    </div>
+<hr>
+    <audio controls autoplay>
+        <source src="CC.ogg" type="audio/ogg">
+        <source src="CC.mp3" type="audio/mpeg">
+      </audio>
+
+    <section id="our-love-story" style="display: none;">
+        <h2>Our Love Story</h2>
+        <p class="double">"Take delight in the Lord, and He will give you the desires of your heart. Commit your way to the Lord; trust in Him and He will do this."
+            When you focus on God, He aligns your desires with His perfect plan, including finding the right person to love.
+            
+            I used to think love wasn’t meant for me. After countless disappointments, I gave up on the idea of it entirely. But deep in my heart, in one quiet moment during 2023, I prayed to God, asking Him to show me what real love is. It wasn’t a desperate plea—it was a surrender, trusting that if love was meant to find me, it would be through His guidance.
+            
+            Not long after, someone appeared on my Telegram, and at first, it felt like such a random encounter. I noticed his profile because of the song he had shared. But then, he messaged me, and I couldn’t help but feel uneasy at first. He said he knew me, even though my Telegram profile was unrecognizable. It was odd, and I thought, "Loko to ah"
+            
+            As we started talking, though, my wariness faded. There was something about him—something genuine, kind, and deeply comforting. The more we talked, the more I realized I was feeling something I hadn’t felt in so long. I was intrigued by him in a way I couldn’t explain. Every time he wasn’t online, I missed him terribly. And every time he was, my heart felt lighter, as if the day suddenly became brighter. 
+            
+            He became my safe place, someone I could talk to about anything. He made me laugh, made me feel cherished, and filled my days with so much joy. On December 3, 2023, we took that leap of faith together, even though it felt crazy to start something so meaningful while being miles apart.
+            
+            Now, here we are, celebrating our anniversary. We didn’t think we’d make it this far—so many people doubted us, said it was impossible. But through all the challenges, we stayed strong. Despite the distance, we never let it diminish the love we shared. It amazes me every day how we’ve built something so beautiful.  
+            
+            I know now that God didn’t just answer my prayer—He exceeded it. He gave me someone who feels like my soulmate, someone who reminds me that love isn’t just about proximity; it’s about connection, communication, and understanding. I’m grateful beyond words for the love we’ve nurtured and the strength we’ve found in each other. It’s a love I never thought I’d have, but it’s the one I’ve always dreamed of.</p> 
+    </section>
+
+    <section id="our-photos" style="display: none;">
+        <h2>Our Photos</h2>
+    
+<iframe src="anniv.html" height="488" width="1000" title="anniv"></iframe>
+    </section>
+
+    <section id="message-for-you" style="display: none;">
+        <h2>Message for You</h2>
+        <p><a href="https://medium.com/@erinkat44/kanunay-karon-puhon-kanimo-ra-ko-mupahuway-6c2ae08a4088" target="_blank">Do you still remember this?</a></p>
+    <p>No matter where life takes us, no matter how the tides change, my heart will always find its way back to you.</p>
+    <iframe src="message.html" height="1000" width="1000" title="anniv"></iframe>
+</section>
+
+    <script>
+        // Show the body when the page loads
+        window.onload = function() {
+            document.body.style.display = 'block';
+            alert('Happy Anniversary!');
+            firstPopup();
+        };
+
+        let clickCount = 0;
+
+        function firstPopup() {
+            clickCount++;
+            if (clickCount === 1) {
+                alert('I love you!');
+                firstPopup();
+            } else if (clickCount === 2) {
+                alert('Please be mine forever!');
+                showNavigation();
+            }
+        }
+
+        function showNavigation() {
+            document.querySelector('.nav').style.display = 'block';
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'block'; // Show all sections
+            });
+        }
+    </script>
+</body>
+</html>
